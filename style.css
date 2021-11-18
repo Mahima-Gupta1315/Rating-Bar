@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #0a2b3c;
+}
+
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25), inset 2px 2px 5px rgba(255, 255, 255, 0.25), 8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h2{
+	margin-bottom: 10px;
+	font-weight: 500;
+	color: #1f9cff ;
+}
+
+.container .Skills{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	padding-right: 10px ;
+	transition: 0.5s;
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.25), inset 2px 2px 5px rgba(255, 255, 255, 0.25), 8px 30px 30px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.container:hover .Skills{
+	filter: blur(5px);
+	opacity: 0.2;
+}
+
+.container .Skills:hover {
+	filter: blur(0px);
+	opacity: 1;
+}
+.container .Skills h3{
+	min-width: 180px;
+	text-align: right;
+	padding-right:20px ;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.container .Skills .rating{
+	position: relative;
+	display: flex;
+	margin: 10px 0;
+	flex-direction: row-reverse ;
+}
+
+.container .Skills .rating input{
+	position: relative;
+	width: 20px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-appearance: none;
+	appearance: none;
+	overflow: hidden;
+}
+
+.container .Skills .rating input::before{
+	content: '\f005';
+	position: absolute;
+	font-family: fontAwesome;
+	font-size: 34px;
+	position: absolute;
+	left: 4px;
+	color: #030b0f;
+	transition: 0.5s;
+}
+
+.container .Skills .rating input:nth-child(2n + 1)::before{
+	right: 4px;
+	left: initial;
+}
+
+.container .Skills .rating input:hover ~ input::before,
+.container .Skills .rating input:hover::before,
+.container .Skills .rating input:checked ~ input::before,
+.container .Skills .rating input:checked::before{
+	color: #1f9cff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
